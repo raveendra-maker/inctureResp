@@ -4,8 +4,8 @@ class HomePage {
         this.page = page;
 
         // Fulfillment Section
-        this.shippingOption =
-            page.getByText('Shipping', { exact: true });
+        this.shippingOption = 
+            page.locator("//div[contains(@class,'method-option-heading') and normalize-space()='Shipping']")
 
         this.localDeliveryOption =
             page.getByText('Local Delivery', { exact: true });
